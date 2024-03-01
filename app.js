@@ -5,7 +5,9 @@ const mongoose = require("./backend/server"); //establishing the database connec
 // setting express as app
 const app = express();
 
+const port = 4000 || process.env.PORT;
+
 // creating the port for the server
-app.listen(4000, () => {
-  console.log("server connected successfully at port 4000");
+app.listen(port, () => {
+  console.log(`http://localhost:${port}`);
 });

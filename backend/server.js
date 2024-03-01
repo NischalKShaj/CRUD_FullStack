@@ -1,7 +1,7 @@
 // importing the required packages
 const mongoose = require("mongoose");
 
-// establishing the connection for the server
+// establishing the connection for the database
 mongoose
   .connect("mongodb://localhost:27017/CRUD_APPLICATION")
   .then(() => {
